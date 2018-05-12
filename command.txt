@@ -1,4 +1,5 @@
 1. Create Repository in Github 
+
 2. Clone Repository
 
 VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub
@@ -94,4 +95,66 @@ nothing to commit, working tree clean
 
 VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
 
-8.
+8.Installing Flask
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ pip install flask
+Collecting flask
+  Using cached https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl
+Collecting Jinja2>=2.10 (from flask)
+  Using cached https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl
+Collecting itsdangerous>=0.24 (from flask)
+Collecting Werkzeug>=0.14 (from flask)
+  Using cached https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl
+Collecting click>=5.1 (from flask)
+  Using cached https://files.pythonhosted.org/packages/34/c1/8806f99713ddb993c5366c362b2f908f18269f8d792aff1abfd700775a77/click-6.7-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->flask)
+Installing collected packages: MarkupSafe, Jinja2, itsdangerous, Werkzeug, click, flask
+Successfully installed Jinja2-2.10 MarkupSafe-1.0 Werkzeug-0.14.1 click-6.7 flask-1.0.2 itsdangerous-0.24
+You are using pip version 9.0.3, however version 10.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(venv)
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ pip list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+click (6.7)
+Flask (1.0.2)
+itsdangerous (0.24)
+Jinja2 (2.10)
+MarkupSafe (1.0)
+pip (9.0.3)
+setuptools (39.0.1)
+Werkzeug (0.14.1)
+You are using pip version 9.0.3, however version 10.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(venv)
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ python -m pip install --upgrade pip
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/0f/74/ecd13431bcc456ed390b44c8a6e917c1820365cbebcb6a8974d1cd045ab4/pip-10.0.1-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 9.0.3
+    Uninstalling pip-9.0.3:
+      Successfully uninstalled pip-9.0.3
+Successfully installed pip-10.0.1
+(venv)
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+
+--------------------------------------------
+9. Going forward using powershell
+PS C:\MyPlayground\MyGitHub\python_flask_todo_12052018> venv\Scripts\activate.ps1
+(venv) PS C:\MyPlayground\MyGitHub\python_flask_todo_12052018>
+
+10. Going to start my first app 
+(venv) PS C:\MyPlayground\MyGitHub\python_flask_todo_12052018> python app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 272-390-842
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [12/May/2018 10:34:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/May/2018 10:34:21] "GET /favicon.ico HTTP/1.1" 404 -
+
