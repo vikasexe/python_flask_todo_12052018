@@ -1,0 +1,97 @@
+1. Create Repository in Github 
+2. Clone Repository
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub
+$ git clone https://github.com/vikasexe/python_flask_todo_12052018.git
+Cloning into 'python_flask_todo_12052018'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub
+
+3. Create Virtual Environment 
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ py -3 -m venv venv
+
+4. Activate Virtual Environment
+(Can not activate a virtualenv in GIT bash mingw32 for Windows - 
+To run the script in your current shell, use either . Scripts/activate or source Scripts/activate)
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018/venv (master)
+$ source Scripts/activate
+(venv)
+
+5. Create .gitignore file so we can ignore entire virtual environment files 
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ touch .gitignore
+
+6. Edit file to enter venv directory
+7. Done first checkin 
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git add .
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git commit -m "Commit .gitignore file - to ignore python virtual environment file"
+[master 5655dfa] Commit .gitignore file - to ignore python virtual environment file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': vikas.exe@gmail.com
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/vikasexe/python_flask_todo_12052018.git
+   452662f..5655dfa  master -> master
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+VSahu@DEN-AA108904 MINGW64 /c/MyPlayground/MyGitHub/python_flask_todo_12052018 (master)
+
+8.
