@@ -183,3 +183,12 @@ Successfully installed psycopg2-2.7.4
 
 11. Start App
 (venv) PS C:\MyPlayground\MyGitHub\python_flask_todo_12052018> python app.py
+
+12. To Create database in postgres
+(venv) c:\Playground\flask_todo>python
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from app import db
+c:\Playground\flask_todo\venv\lib\site-packages\flask_sqlalchemy\__init__.py:794: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+>>> db.create_all()
